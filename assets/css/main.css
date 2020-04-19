@@ -44,3 +44,133 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+body {
+  font-family: "Droid Serif", serif; }
+
+header {
+  background-color: #F3F3F3; }
+
+.narrow-container {
+  width: 100%;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 10px;
+  box-sizing: border-box; }
+
+.message {
+  width: 450px;
+  margin-top: 30px;
+  display: inline-block; }
+
+p {
+  line-height: 2;
+  font-size: 17px;
+  margin-bottom: 15px; }
+
+.signature {
+  margin-top: 40px;
+  font-style: italic; }
+  .signature .name {
+    font-weight: 800; }
+
+.photo {
+  float: right;
+  margin-top: 60px;
+  margin-right: 10px; }
+
+.background-change {
+  width: 100%;
+  overflow: hidden;
+  z-index: -1; }
+
+.main-contents {
+  background-color: white;
+  z-index: 10000;
+  margin-top: -15px;
+  padding-top: 30px; }
+  .main-contents p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px; }
+  .main-contents .row {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+  .main-contents .company {
+    flex: 33.33%;
+    box-sizing: border-box;
+    padding: 40px; }
+    .main-contents .company .background {
+      width: 100%;
+      height: 425px;
+      border-radius: 14px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      text-decoration: none; }
+      .main-contents .company .background .coming-soon {
+        font-size: 22px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding-top: 190px;
+        display: none; }
+      .main-contents .company .background:hover {
+        box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.85); }
+        .main-contents .company .background:hover img {
+          display: none; }
+        .main-contents .company .background:hover .coming-soon {
+          display: block; }
+      .main-contents .company .background img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding-top: 175px; }
+    .main-contents .company .wheal-investments {
+      background-image: url("/assets/img/wheal-investments-background.jpg"); }
+    .main-contents .company .wheal-ventures {
+      background-image: url("/assets/img/wheal-ventures-background.jpg"); }
+    .main-contents .company .wheal-developments {
+      background-image: url("/assets/img/wheal-developments-background.jpg"); }
+
+.wheal-group-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 520px;
+  width: 100%; }
+
+footer {
+  text-align: center;
+  margin: 40px 0; }
+  footer p {
+    font-size: 14px; }
+
+@media (max-width: 1000px) {
+  .message {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; }
+  .main-contents .row {
+    display: block; }
+  .photo {
+    float: none;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto; }
+    .photo img {
+      max-width: 390px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; } }
